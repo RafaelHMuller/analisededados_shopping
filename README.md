@@ -1,0 +1,2 @@
+# analisededados_shopping
+ 
