@@ -20,8 +20,6 @@ import pyautogui   #biblioteca de automação de comandos do mouse e teclado
 import pyperclip   #biblioteca que vem junto com pyautogui; usada para digitar textos com caracteres especiais
 import time   #biblioteca de funções relacionadas a tempo
 import pandas as pd   #biblioteca para tratamento de arquivos
-import openpyxl   #biblioteca para tratamento de arquivos excel; não ignora gráficos
-import keyboard   #biblioteca de automação de comandos do mouse e teclado
 import os
 import shutil
 
@@ -77,7 +75,7 @@ for arquivo in arquivos_downloads:
         os.remove(local_arquivo)
 
 
-# In[19]:
+# In[21]:
 
 
 #5 - importar para o py
@@ -87,7 +85,7 @@ display(df)
 df.info()
 
 
-# In[20]:
+# In[22]:
 
 
 #6 - calcular os indicadores de interesse para a empresa: 'o faturamento e a quantidade de produtos vendidos no dia anterior'
@@ -104,7 +102,7 @@ qtde_produtos = len(df_qtde_produtos['Produto'].unique())
 print(qtde_produtos)
 
 
-# In[34]:
+# In[23]:
 
 
 #7 - enviar um email para a diretoria com os indicadores de venda
